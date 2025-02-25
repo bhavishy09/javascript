@@ -1,1 +1,2 @@
 # javascript
+learning java script 
