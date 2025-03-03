@@ -19,7 +19,7 @@ console.log(str1+str2)
 //perfect method 
 //is is best tarika 
 console.log(`hii this is me bhavishya ${str1} my age is ${20} `);
-
+console.log(`hi i am bhavishya ${ katariya } perusing ${engineering}`);
 
 
 
