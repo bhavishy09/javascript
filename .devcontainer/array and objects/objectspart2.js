@@ -80,24 +80,46 @@ users[1].email
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 
+
+
+
+//OBJECT DEstructing 
+
 const course = {
     coursename: "js in hindi",
     price: "999",
     courseInstructor: "hitesh"
 }
 
+
+/*bar bara couse.price/coursename   y sab likhne k vjhye app isse OBJECT DEstructing  
+    kr skte h */ 
 // course.courseInstructor
 
+
+
+//this is how you destructure curly braces k andr  // esme jo 
 const {courseInstructor: instructor} = course
 
 // console.log(courseInstructor);
 console.log(instructor);
+
+
+
+
+//api--> is basically bakend se koi value ara h usse ap kese likhte h  
+
+
+//jason -->object hi h --> keys ans vlue both string " "
 
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
 //     "price": "free"
 // }
+
+
+// api--> is also get in form of array of objects 
 
 [
     {},
