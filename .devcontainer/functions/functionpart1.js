@@ -1,58 +1,139 @@
 
-function sayMyName(){
-    console.log("H");
-    console.log("I");
-    console.log("T");
-    console.log("E");
-    console.log("S");
-    console.log("H");
+// console.log("B")
+// console.log("B")
+// console.log("a")
+// console.log("v")
+// console.log("i")
+// console.log("s")
+// console.log("B")
+
+function showname()
+{
+
+    console.log("B")
+    console.log("B")
+    console.log("a")
+    console.log("v")
+    console.log("i")
+    console.log("s")
+   
+
+
+
 }
 
-// sayMyName()
+// showname()
 
-// function addTwoNumbers(number1, number2){
+function addtwono(num1,num2)
 
-//     console.log(number1 + number2);
-// }
+{
 
-function addTwoNumbers(number1, number2){
+    console.log(num1+num2)
 
-    // let result = number1 + number2
-    // return result
-    return number1 + number2
 }
 
-const result = addTwoNumbers(3, 5)
+// addtwono(3,8)
+// const result= addtwono(3,8)
+// console.log("result:",result)
+// here reesut is undefine because function koi returen value nahi h 
+/*function bs console log ki madad se  print kra rha h --> basically console kren ka mtlab y nhi ki function bo value 
+print bhi  kr rha h */
 
-// console.log("Result: ", result);
+
+function addtwono(num1,num2)
+
+{
+
+    let result=num1+num2
+    return result
+
+}
+// const result= addtwono(3,8)
+// console.log("result:",result)
+// ab result ki value 11 arhi phele undefine thi 
 
 
-function loginUserMessage(username = "sam"){
-    if(!username){
-        console.log("PLease enter a username");
+function loginuser(username)
+{
+    return `${username} just logged in`
+}
+
+// you get nothing  loginuser("hitesh")
+
+//coreect way 
+// console.log(loginuser("hitesh"))
+
+/* if you pass nothing  
+console.log(loginuser(""))
+ you get nothing 
+
+*/
+
+function loginuser(username)
+{   
+    if(!username)
+    {
+        console.log("enter vaild username")
         return
     }
     return `${username} just logged in`
 }
 
-// console.log(loginUserMessage("hitesh"))
-// console.log(loginUserMessage("hitesh"))
+
+console.log(loginuser(""))
 
 
-function calculateCartPrice(val1, val2, ...num1){
-    return num1
-}
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+
+// [part 2]
+
+
+
+/* basically here we  use rest operator which take 
+multiple values return ...num1 convert all values in  array 
+*/
+// function calculatecart(...num1)
+// {
+//     return num1
+// }
+
+// console.log(calculatecart(2000,2000,2000,39000))
+
+
+
+
+
+ 
+/*
+
+here val1 and val2 take values and baki bachi(rest values ) hui vaklues
+array m ayegi 
+
+
+*/
+
+// function calculatecart(val1,val2,...num1)
+// {
+//     return num1
+// }
+
+// console.log(calculatecart(2000,2000,2000,39000))
+
+
+
+// how to use objects in functions 
 
 const user = {
     username: "hitesh",
-    prices: 199
+    price: 199
 }
 
 function handleObject(anyobject){
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
+
+handleObject(user)
+
 
 // handleObject(user)
 handleObject({
@@ -60,11 +141,5 @@ handleObject({
     price: 399
 })
 
-const myNewArray = [200, 400, 100, 600]
 
-function returnSecondValue(getArray){
-    return getArray[1]
-}
 
-// console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
