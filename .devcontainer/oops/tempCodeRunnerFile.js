@@ -1,1 +1,1 @@
-console.log(this);
+chai.printMe()
