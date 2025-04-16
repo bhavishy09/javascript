@@ -1,1 +1,2 @@
-chai.printMe()
+ // enumerable: true,
+    
